@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Google Antigravity">
+  <rect width="64" height="64" rx="14" fill="#1f2430"/>
+  <circle cx="32" cy="32" r="9" fill="#8ab4f8"/>
+  <ellipse cx="32" cy="32" rx="22" ry="9" fill="none" stroke="#8ab4f8" stroke-width="3" transform="rotate(-30 32 32)"/>
+  <circle cx="47" cy="19" r="4" fill="#f6c85f"/>
+</svg>

@@ -1,0 +1,26 @@
+name: test
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Syntax check
+        run: |
+          node --check runtime.js
+          node --check client.js
+          node --check lib/adapter.js
+          node --check lib/auth.js
+          node --check lib/bridge.js
+          node --check lib/models.js
+          node --check lib/translate.js
+          node --check login.mjs
+      - name: Unit tests
+        run: node --test test/translate.test.mjs test/stream.mock.test.mjs test/bridge.test.mjs
